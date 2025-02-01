@@ -191,6 +191,8 @@ loadtower(scene);
 loadAirplane(scene).then((model) => {
     plane = model;
     console.log('Plane position:', plane.position);
+    // take y.pos input from user
+
     plane.position.set(-255-1125, plane.position.y+60, 0);
     const intervalId = setInterval(() => {
         movePlaneDown(plane, verticalSpeed, horizontalSpeed);
@@ -283,17 +285,16 @@ function animateCloud() {
         if(plane.position.y<=0.21 && plane.position.x>=-365){
             xCoordinateElement.textContent = `Touchdown successful`;
             yCoordinateElement.textContent = `Breaks applied`;
+            if(plane.position.x>200){
+                xCoordinateElement.textContent = `Landing Successful`;
+                yCoordinateElement.textContent = ``;
+            }
         }
-        if(plane.position.x<=365 && plane.position.y<=0.21){
+        else if(plane.position.x<=365 && plane.position.y<=0.21){
             xCoordinateElement.textContent = `Bad Landing!`;
             yCoordinateElement.textContent = ``;
         }
-        if(plane.position.x>200 && plane.position.y<=0.21){
-            xCoordinateElement.textContent = `Landing Successful`;
-            yCoordinateElement.textContent = ``;
-            
-        }
-        if(plane.position.y>=Math.tan(THREE.MathUtils.degToRad(6))*(-180-plane.position.x)){
+        else if(plane.position.y>=Math.tan(THREE.MathUtils.degToRad(6))*(-180-plane.position.x)){
             xCoordinateElement.textContent = `Go Around`;
             yCoordinateElement.textContent = ``;
         }

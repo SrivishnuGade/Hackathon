@@ -6,11 +6,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARVR Project</title>
+    <title>Genesys</title>
     <script type="module" src="/src/index.jsx" defer></script>
+    <style>
+      #coordinates {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 36px;
+      }
+    </style> 
   </head>
   <body>
-    <div id="root"></div>
-    <div id="map" style="height: 500px; width: 100%;"></div>
+    <div id="coordinates">
+      <div id="x-coordinate">X: 0</div>
+      <div id="y-coordinate">Y: 0</div>
+    </div>
   </body>
 </html>

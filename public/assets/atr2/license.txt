@@ -1,0 +1,11 @@
+Model Information:
+* title:	GeoFS Official ATR-72 UTair Livery
+* source:	https://sketchfab.com/3d-models/geofs-official-atr-72-utair-livery-cf283f6412744bb28eddf971cc19dad2
+* author:	JAaMDG Official (https://sketchfab.com/jsong.js.us)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "GeoFS Official ATR-72 UTair Livery" (https://sketchfab.com/3d-models/geofs-official-atr-72-utair-livery-cf283f6412744bb28eddf971cc19dad2) by JAaMDG Official (https://sketchfab.com/jsong.js.us) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

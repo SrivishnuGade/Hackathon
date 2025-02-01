@@ -284,7 +284,7 @@ function animateCloud() {
             xCoordinateElement.textContent = `Touchdown successful`;
             yCoordinateElement.textContent = `Breaks applied`;
         }
-        else if(plane.position.x<=365 && plane.position.y<=0.21){
+        if(plane.position.x<=365 && plane.position.y<=0.21){
             xCoordinateElement.textContent = `Bad Landing!`;
             yCoordinateElement.textContent = ``;
         }
@@ -293,9 +293,9 @@ function animateCloud() {
             yCoordinateElement.textContent = ``;
             
         }
-        else if(plane.position.y>=Math.tan(THREE.MathUtils.degToRad(6))*(-180-plane.position.x)){
+        if(plane.position.y>=Math.tan(THREE.MathUtils.degToRad(6))*(-180-plane.position.x)){
             xCoordinateElement.textContent = `Go Around`;
-            yCoordinateElement.textContent = `Climbing`;
+            yCoordinateElement.textContent = ``;
         }
         else{
             xCoordinateElement.textContent = `Distance to touchdown: ${-((plane.position.x+225)*4/1125).toFixed(2)} Nautical Miles`;

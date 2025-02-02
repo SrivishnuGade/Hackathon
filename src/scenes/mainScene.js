@@ -89,7 +89,7 @@ function onWheel(event) {
 function onKeyDown(event) {
     if (event.key === 'c' || event.key === 'C') {
         if (camera === higherFOVCamera) {
-            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 10, 8000);
             camera.position.copy(higherFOVCamera.position);
             camera.lookAt(scene.position);
         } else {
